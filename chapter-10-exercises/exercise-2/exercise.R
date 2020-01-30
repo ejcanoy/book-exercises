@@ -49,6 +49,7 @@ nrow(salaries[salaries$got_raise == TRUE, ])
 # What was the dollar value of the highest raise?
 biggest_raise <- max(salaries$adjustments)
 salaries[ salaries$adjustments == max(salaries$adjustments), "adjustments"]
+
 # What was the "name" of the employee who received the highest raise?
 salaries[salaries$adjustments == max(salaries$adjustments), "employees"]
 
